@@ -1,0 +1,86 @@
+/* Global styles */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(189, 225, 122);
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+}
+
+/* Header text */
+.header_text {
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    margin: 20px 0;
+}
+
+/* Gif container styling */
+.gif-container {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Button styling */
+.btn {
+    background-color: #ffffff;
+    color: rgb(233, 48, 48);
+    padding: 15px 32px;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: none;
+    border-radius: 12px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: rgb(233, 48, 48);
+    color: white;
+}
+
+.message {
+    font-size: 1.2em;
+    color: white;
+    margin-top: 10px;
+}
+
+/* Media Queries for responsiveness */
+@media only screen and (max-width: 320px) {
+    .header_text {
+        font-size: 20px;
+    }
+
+    .btn {
+        padding: 10px 18px;
+        font-size: 12px;
+    }
+
+    .gif-container img {
+        height: 60vh;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .header_text {
+        font-size: 28px;
+    }
+
+    .btn {
+        padding: 15px 25px;
+        font-size: 14px;
+    }
+
+    .gif-container img {
+        height: 60vh;
+    }
+}

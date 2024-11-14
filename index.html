@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ken's Cute Confession</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="header_text">Hello!</h1>
+        <button class="btn" onclick="showPage1()">hiii</button>
+    </div>
+
+    <div class="gif-container" id="page1">
+        <img src="https://raw.githubusercontent.com/archiveken/my-confession/main/01.gif" alt="01">
+        <p class="message">I have a question?</p>
+        <button class="btn" onclick="showPage2()">okay(?!)</button>
+    </div>
+
+    <div class="gif-container" id="page2">
+        <img src="https://raw.githubusercontent.com/archiveken/my-confession/main/02.gif" alt="02">
+        <p class="message">Like a banana and strawberry waiting to be mixed into something sweet, I stand here, ready to take the next step. Before I move forward, I turn to you, asking: would you let me, the strawberry, join you, the banana, on this journey and see where it leads us?</p>
+        <button class="btn" onclick="showPage3()">:>)</button>
+    </div>
+
+    <div class="gif-container" id="page3">
+        <img src="https://raw.githubusercontent.com/archiveken/my-confession/main/03.gif" alt="03">
+        <p class="message">I'm gonna make this simple for you, you've got two choices:</p>
+        <button class="btn" onclick="showPage4()">Yes</button>
+        <button class="btn" onclick="showPage4()">Yes!??</button>
+    </div>
+
+    <div class="gif-container" id="page4">
+        <img src="https://raw.githubusercontent.com/archiveken/my-confession/main/04.gif" alt="04">
+        <p class="message">You make me blush love</p>
+        <button class="btn" onclick="showPage5()">❤️</button>
+    </div>
+
+    <div class="gif-container" id="page5">
+        <img src="https://raw.githubusercontent.com/archiveken/my-confession/main/05.gif" alt="05">
+        <p class="message">: 520 💗</p>
+        <button class="btn" onclick="showPage6()">❤️</button>
+    </div>
+
+    <div class="gif-container" id="page6">
+        <img src="https://raw.githubusercontent.com/archiveken/my-confession/main/06.gif" alt="06">
+        <p class="message">THANK YOU MY LOVE</p>
+    </div>
+
+    <script>
+        function showPage1() {
+            document.getElementById("page1").style.display = "block";
+        }
+
+        function showPage2() {
+            document.getElementById("page1").style.display = "none";
+            document.getElementById("page2").style.display = "block";
+        }
+
+        function showPage3() {
+            document.getElementById("page2").style.display = "none";
+            document.getElementById("page3").style.display = "block";
+        }
+
+        function showPage4() {
+            document.getElementById("page3").style.display = "none";
+            document.getElementById("page4").style.display = "block";
+        }
+
+        function showPage5() {
+            document.getElementById("page4").style.display = "none";
+            document.getElementById("page5").style.display = "block";
+        }
+
+        function showPage6() {
+            document.getElementById("page5").style.display = "none";
+            document.getElementById("page6").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
